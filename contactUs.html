@@ -1,0 +1,87 @@
+<!DOCTYPE html><html lang="en">
+  <head>
+    <meta name="viewport" content="with=device=width", initial-scale="1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <title>Contact Us</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+  </head>
+  <body>
+    <nav>
+        <a href="index.html"><img src="images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <img src="images/close.png" width="10px" onclick="hideMenu()" class="fi">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="beach.html">Beaches</a></li>
+            <li><a href="heritage.html">Heritage Sites</a></li>
+            <li><a href="nature.html">Natural Attractions</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <img src="images/menu.png" width="10px" onclick="showMenu()" class="fi">
+      </nav>
+    <section class="contact">
+        <div class="content">
+            <h2>Contact Us</h2>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><i class="fi fi-sr-marker"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>19, Municipal Road<br>Dalanwala<br>Dehradun<br>India</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fi fi-sr-phone-call"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>0123456789</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fi fi-sr-envelope"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>vagarindia@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form>
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Full name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span id="area">Type your Message</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" name="" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+          navLinks.style.right="0";
+        }
+        function hideMenu(){
+          navLinks.style.right = "-200px";
+        }
+      </script>
+  </body>
+</html>

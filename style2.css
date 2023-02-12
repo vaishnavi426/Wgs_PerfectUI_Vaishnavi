@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;;
+}
+.container3{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/Lakshadweep.avif);
+    background-position: center;
+    background-size: cover;
+}
+.container4{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url(images/site1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.container5{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/natural.jpg);
+    background-position: center;
+    background-size: cover;
+}
+nav{
+    display:flex;
+    background: #fffaf0;
+    min-height: 10vh;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+nav img{
+    margin-top: 5px;
+    margin-left: 20px;
+    width: 50px;
+  }
+.nav-links{
+    flex:1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #aba8a7;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+#nav1{
+    background: none;
+}
+.nav2 ul li a{
+    color: white;
+}
+nav .fi{
+    display: none;
+  }
+  @media(max-width:700px){
+    .text-box h1{
+      font-size: 20px;
+    }
+    .nav-links ul li{
+      display: block;
+    }
+    .nav-links{
+      position: absolute;
+      background: #aba8a7;
+      height: 100vh;
+      width: 200px;
+      top: 0;
+      right: -200px;
+      text-align: left;
+      z-index: 2;
+      transition: 1s;
+    }
+    nav .fi{
+      width: 15px;
+      display: block;
+      color: #fff;
+      margin: 10px;
+      font-size: 22px;
+      cursor: pointer;
+    }
+    .nav-links ul{
+      padding: 30px;
+    }
+  }
+.row{
+    display: flex;
+    height: 65%;
+    align-items: center;
+    margin-bottom: 150px;
+}
+.row .col{
+    flex-basis: 50%;
+    margin-left: 50px;
+}
+.row .col h1{
+    color: #fff;
+    font-size: 70px;
+}
+.row .col p{
+    color: rgb(255, 253, 253);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+}
+#button1{
+    width: 180px;
+    color: #000;
+    font-size: 12px;
+    padding: 12px 0;
+    background: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 20px;
+}
+.card{
+    width: 190px;
+    height: 200px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 10px;
+    margin-top: 20px;
+    background-image: url(images/pic1.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+    transition: 0.5s;
+    align-items: center;
+}
+.card1 a{
+    text-decoration: none;
+    color: #000;
+}
+.card2 a{
+    text-decoration: none;
+    color: #000;
+}
+.card3 a{
+    text-decoration: none;
+    color: #fff;
+}
+.card4 a{
+    text-decoration: none;
+    color: #fff;
+}
+.card1{
+    color: #050505;
+    background: url(images/pic2.png);
+}
+.card2{
+    background: url(images/pic3.png);
+    margin-bottom: 0;
+}
+.card3{
+    color: #fff;
+    background: url(images/pic4.png);
+}
+.card4{
+    color: #fff;
+    margin-top: -20px;
+    background: url(images/pic5.png);
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+.card:hover h5{
+    background: rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+.content{
+    position: relative;
+    margin-left: 75px;
+    margin-bottom: 50px;
+    align-items: center;
+    background: #aba8a7;
+    padding: 10px 50px;
+    border-radius: 10px;
+    width: 80%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    box-shadow: rgba(0,0,0,0.7);
+}
+.content .textbox{
+    position: relative;
+    max-width: 600px;
+}
+.content .textbox h2{
+    color: #333;
+    font-size: 30px;
+    line-height: 1.6em;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+.content .textbox h2 span{
+    color: #017143;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+.content .textbox p{
+    color: #fdfafa;
+}
+.content .imgBox{
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5px;
+    padding-left: 15px;
+    margin-top: 50px;
+}
+.content .imgBox img{
+    max-width: 400px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+@media(max-width:700px){
+    .row{
+        flex-flow: column;
+    }
+    .content .imgBox{
+        display: block;
+        order: 1;
+        width: 100%;
+        height: 200px;
+    }
+    .content .textbox{
+        display: block;
+        order: 2;
+        width: 100%;
+    }
+    .content{
+        padding: 20px 35px;
+    }
+    .content .textbox h2{
+        margin-bottom: 5px;
+    }
+}
+.card9 a{
+    text-decoration: none;
+    color: #000;
+}
+.card5 a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.card6 a{
+    text-decoration: none;
+    color: #fdf9f9;
+}
+.card8 a{
+    text-decoration: none;
+    color: #fffefe;
+}
+.card9{
+    color: #050505;
+    background: url(images/site3.png);
+}
+.card5{
+    background: url(images/site5.png);
+    margin-bottom: 0;
+}
+.card6{
+    color: #fff;
+    background: url(images/site6.png);
+}
+.card8{
+    color: #fff;
+    margin-top: -20px;
+    background: url(images/site9.png);
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+.card7 a{
+    text-decoration: none;
+    color: #f8f4f4;
+}
+.card10 a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.card11 a{
+    text-decoration: none;
+    color: #fdf9f9;
+}
+.card12 a{
+    text-decoration: none;
+    color: #000000;
+}
+.card7{
+    color: #050505;
+    background: url(images/nature2.png);
+}
+.card10{
+    background: url(images/nature4.png);
+    margin-bottom: 0;
+}
+.card11{
+    color: #fff;
+    background: url(images/nature6.png);
+}
+.card12{
+    color: #fff;
+    margin-top: -20px;
+    background: url(images/nature7.jpg);
+}
